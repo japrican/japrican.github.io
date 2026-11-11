@@ -42,11 +42,11 @@ h1 .nm{background:var(--grad);-webkit-background-clip:text;background-clip:text;
 .intro{margin:0;color:var(--muted)}
 @media (max-width:520px){h1 .bar{display:none}h1 .nm{display:block}}
 .doors{display:flex;flex-direction:column;gap:14px}
-a.door{display:flex;gap:16px;align-items:flex-start;text-decoration:none;color:inherit;background:var(--panel);
-  border:1px solid var(--line);border-radius:18px;padding:18px 18px 18px 16px;transition:transform .15s ease,border-color .15s ease}
+a.door{display:flex;gap:0;align-items:flex-start;text-decoration:none;color:inherit;background:var(--panel);
+  border:1px solid var(--line);border-radius:18px;padding:18px 20px;transition:transform .15s ease,border-color .15s ease}
 a.door:hover{border-color:var(--accent);transform:translateY(-2px)}
 a.door:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
-.mark{flex:0 0 48px;height:48px;border-radius:14px;display:grid;place-items:center;color:#fff;font-family:var(--f-display);font-weight:700;font-size:20px}
+.mark{align-self:flex-start;display:inline-block;color:#fff;font-family:var(--f-body);font-weight:700;font-size:13px;letter-spacing:.08em;line-height:1;padding:6px 12px;border-radius:999px;margin-bottom:6px}
 .door div{min-width:0;display:flex;flex-direction:column;gap:2px}
 .door .who{font-size:13px;font-weight:700;color:var(--muted);letter-spacing:.04em}
 .door b{font-family:var(--f-display);font-size:21px;line-height:1.4}
@@ -69,8 +69,8 @@ footer{text-align:center;font-size:13px;color:var(--muted)}
 
   <nav class="doors" aria-label="活動の入口">
     <a class="door" href="/mukougawa/">
-      <span class="mark" style="background:var(--c1)">体</span>
       <div>
+        <span class="mark" style="background:var(--c1)">Experience</span>
         <span class="who">保護者・学校の先生へ</span>
         <b>スマホの向こう側</b>
         <p>わが子のスマホに届くグループトークを、15分で体験。子どもたちの言葉の意味と、話してもらえる声かけがわかります。</p>
@@ -78,8 +78,8 @@ footer{text-align:center;font-size:13px;color:var(--muted)}
       </div>
     </a>
     <a class="door" href="/mama-cafe-kurume/">
-      <span class="mark" style="background:var(--c2)">話</span>
       <div>
+        <span class="mark" style="background:var(--c2)">Share</span>
         <span class="who">子育て中のお母さん・お父さんへ</span>
         <b>Mama Café Kurume</b>
         <p>いまの困りごとを安心して話しながら、新しいヒントを持ち帰れる、親どうしの小さな集まりです。</p>
@@ -87,8 +87,8 @@ footer{text-align:center;font-size:13px;color:var(--muted)}
       </div>
     </a>
     <a class="door" href="/portal/">
-      <span class="mark" style="background:var(--c3)">学</span>
       <div>
+        <span class="mark" style="background:var(--c3)">Learn</span>
         <span class="who">中学生と、その家族へ</span>
         <b>学びのミカタ</b>
         <p>会話形式で「なぜそうなるのか」がわかる、中学生向けの学習アプリ。スマホからすぐ開けます。</p>
